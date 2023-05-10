@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle del Planeta</title>
+</head>
+<body>
+    <div th:fragment="content">
+        <h1>Detalle del Planeta</h1>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Distancia en UA</th>
+                <th>Identificador</th>
+                <th>Distancia en miles de kilómetros</th>
+            </tr>
+            <tr>
+                <td th:text="${municipiosDTO.nombre}"></td>
+                <td th:text="${municipiosDTO.UA}"></td>
+                <td th:text="${municipiosDTO.id}"></td>
+                <td th:text="${municipiosDTO.milesk}"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
